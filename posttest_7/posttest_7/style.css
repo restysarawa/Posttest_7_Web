@@ -1,0 +1,218 @@
+@import url('https://fonts.google.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body{
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #04AA6D;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #fff; */
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display:flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    /* color:  #333; */
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none; 
+}
+
+.content{
+    /* position: relative; */
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 80%;
+
+}
+.content .textBox h2{
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+     color: #017143;
+     font-size: 1.2em;
+     font-weight: 900;
+}
+
+.content .textBox .update{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #c58e05;
+    /* color: #fff; */
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .textBox .delete{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: red;
+    /* color: #fff; */
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 350px;
+} 
+/* .content .textBox p{
+    font-size: 1.5em;
+    font-style: italic;
+} */
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    margin-top: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1)
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+
+label{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+label::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #000;
+    transition: 0.4s;
+}
+label.active::before{
+    left: 24px;
+    background: #fff;
+
+}
+body.night{
+    background: #000;
+    color: #fff;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
